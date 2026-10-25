@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head -->
+<title>Events · Shaam-e-Dawat Catering</title>
+<meta name="description" content="Weddings, corporate dinners and birthdays: how Shaam-e-Dawat sets up, lights and caters each one.">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body data-barba="wrapper">
+<!-- @include header -->
+<main id="main" data-barba="container" data-barba-namespace="events">
+
+  <section class="ev-wide on-dark" data-wide-stage data-dark aria-label="Three event setups in one wide venue">
+    <canvas data-wide aria-hidden="true"></canvas>
+    <p class="ev-hint"><svg aria-hidden="true"><use href="#i-drag"/></svg>Drag sideways across the venue</p>
+    <div class="ev-panels">
+      <div class="ev-now" aria-live="polite" data-ev-now></div>
+      <div class="ev-dots" role="group" aria-label="Setups" data-ev-dots></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="evs-title">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Events</p>
+          <h2 id="evs-title" class="display" data-rise>Every kind <em>of evening</em></h2>
+        </div>
+        <p class="lead">We cook, serve and set up. Décor, lights and a marquee can come with us too, so there's one team to call.</p>
+      </div>
+      <div class="ev-list" data-ev-list></div>
+    </div>
+  </section>
+
+</main>
+<!-- @include footer -->
+</body>
+</html>

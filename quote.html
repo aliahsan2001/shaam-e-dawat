@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head -->
+<title>Get a quote · Shaam-e-Dawat Catering</title>
+<meta name="description" content="Estimate your catering cost in a minute: guest count, menu, event type and extras, with a price range you can trust.">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body data-barba="wrapper">
+<!-- @include header -->
+<main id="main" data-barba="container" data-barba-namespace="quote">
+  <div class="quote-page">
+    <div class="hall-stage on-dark" data-dark data-hall-stage>
+      <canvas data-hall aria-hidden="true"></canvas>
+      <div class="hall-flat" data-flat aria-hidden="true"><div class="dots" data-dots></div></div>
+      <div class="hall-count" aria-hidden="true"><span class="label">Your hall</span><b data-hall-guests>300</b><span data-hall-tables>30 tables</span></div>
+    </div>
+
+    <div class="quote-form">
+      <div>
+        <p class="eyebrow">Get a quote</p>
+        <h1 class="display" data-rise>How much <em>per head?</em></h1>
+      </div>
+      <form class="q-form" data-quote novalidate>
+        <div class="q-block">
+          <div class="q-row"><label for="q-guests" class="label">Guests</label><output for="q-guests" data-guests-out>300</output></div>
+          <input type="range" class="range" id="q-guests" name="guests" min="50" max="1000" step="10" value="300" data-guests>
+          <div class="range-scale"><span>50, intimate</span><span>1,000, a big walima</span></div>
+        </div>
+        <div class="q-block">
+          <span class="label">Menu</span>
+          <div class="tier-pick" role="radiogroup" aria-label="Menu" data-tiers></div>
+        </div>
+        <div class="q-block">
+          <span class="label">Event</span>
+          <div class="ev-pick" role="group" aria-label="Event type" data-events></div>
+        </div>
+        <div class="q-block">
+          <span class="label">Extras <span style="text-transform:none;letter-spacing:0;font-weight:400">(optional)</span></span>
+          <div class="addons" data-addons></div>
+        </div>
+        <div class="estimate" aria-live="polite">
+          <span class="label">Your estimate</span>
+          <p class="est-range" data-range>Rs 0</p>
+          <p data-per></p>
+        </div>
+        <div class="q-block">
+          <span class="label">Send it to us for a firm quote</span>
+          <div class="contact-grid">
+            <div class="field"><label for="q-name">Your name</label><input id="q-name" name="name" autocomplete="name" required><p class="field-error" id="e-name"></p></div>
+            <div class="field"><label for="q-phone">Mobile</label><input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="03xx xxxxxxx" required><p class="field-error" id="e-phone"></p></div>
+            <div class="field"><label for="q-date">Date</label><input id="q-date" name="date" type="date" required><p class="field-error" id="e-date"></p></div>
+            <div class="field"><label for="q-venue">Venue or area <span class="optional">(optional)</span></label><input id="q-venue" name="venue" placeholder="e.g. a lawn in DHA"></div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block"><span>Request my quote</span></button>
+      </form>
+      <div class="done" data-done hidden tabindex="-1"></div>
+    </div>
+  </div>
+</main>
+<!-- @include footer -->
+</body>
+</html>

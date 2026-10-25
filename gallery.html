@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head -->
+<title>Gallery · Shaam-e-Dawat Catering</title>
+<meta name="description" content="Photographs from Shaam-e-Dawat's past weddings, corporate dinners and private functions, and the food we served.">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body data-barba="wrapper">
+<!-- @include header -->
+<main id="main" data-barba="container" data-barba-namespace="gallery">
+
+  <section class="orbit on-dark" data-dark aria-labelledby="g-title">
+    <canvas data-orbit aria-hidden="true"></canvas>
+    <div class="orbit-head">
+      <p class="eyebrow">Gallery</p>
+      <h1 id="g-title" class="display" data-rise>Past <em>evenings.</em></h1>
+      <p class="lead">Drag to turn. Click a photo to bring it forward, and again to open it.</p>
+    </div>
+    <div class="orbit-now" aria-live="polite" data-now></div>
+    <div class="orbit-controls">
+      <div class="seg" role="group" aria-label="Arrangement">
+        <button type="button" data-layout="ring" aria-pressed="true"><svg aria-hidden="true"><use href="#i-ring"/></svg><span>Ring</span></button>
+        <button type="button" data-layout="spiral" aria-pressed="false"><svg aria-hidden="true"><use href="#i-spiral"/></svg><span>Spiral</span></button>
+      </div>
+      <div class="orbit-nav">
+        <button type="button" class="icon-btn" data-prev aria-label="Previous photo"><svg aria-hidden="true"><use href="#i-back"/></svg></button>
+        <span><b data-i>1</b> / <span data-n></span></span>
+        <button type="button" class="icon-btn" data-next aria-label="Next photo"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight" aria-labelledby="album-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="album-title" class="display" data-rise>The <em>whole album</em></h2>
+        <div class="filters" role="group" aria-label="Filter" data-filters></div>
+      </div>
+      <div class="album" data-album></div>
+    </div>
+  </section>
+
+  <div class="lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Photo">
+    <button type="button" class="icon-btn lb-close" data-lb-close aria-label="Close"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <figure><img alt="" data-lb-img src="/img/p/1745573673583-a51f665ae48e-1280.webp"><figcaption data-lb-cap></figcaption></figure>
+  </div>
+
+</main>
+<!-- @include footer -->
+</body>
+</html>

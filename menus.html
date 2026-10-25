@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head -->
+<title>Menus &amp; packages · Shaam-e-Dawat Catering</title>
+<meta name="description" content="Three catering menus, Dastarkhwan, Nawabi and Shahi Dawat, with every dish and the price per head.">
+<script type="module" src="/src/main.js"></script>
+</head>
+<body data-barba="wrapper">
+<!-- @include header -->
+<main id="main" data-barba="container" data-barba-namespace="menus">
+
+  <section class="degs on-dark" data-dark aria-labelledby="m-title">
+    <div class="container degs-head">
+      <p class="eyebrow">Menus &amp; packages</p>
+      <h1 id="m-title" class="display" data-rise>Lift a lid.</h1>
+      <p class="lead">Three menus, sealed in their degs. Choose one to see everything that comes in it.</p>
+    </div>
+    <div class="degs-stage" data-degs-stage><canvas data-degs aria-hidden="true"></canvas></div>
+    <div class="container"><div class="deg-tabs" role="tablist" aria-label="Menus" data-tabs></div></div>
+  </section>
+
+  <section class="section-tight menu-detail" aria-live="polite">
+    <div class="container" data-menu></div>
+  </section>
+
+  <section class="section-tight section-ivory" aria-labelledby="cmp-title">
+    <div class="container">
+      <div class="section-head">
+        <h2 id="cmp-title" class="display" data-rise>Side <em>by side</em></h2>
+        <a class="btn btn-gold" href="/quote"><span>Price my event</span></a>
+      </div>
+      <div class="table-wrap" data-reveal><table class="cmp" data-cmp><caption class="sr-only">The three menus compared</caption></table></div>
+      <p class="note">Prices are per head for 100 guests or more, including cooking, serving staff, crockery and buffet setup. Corporate events add 8%; private functions under 100 guests are 8% less.</p>
+    </div>
+  </section>
+
+</main>
+<!-- @include footer -->
+</body>
+</html>
