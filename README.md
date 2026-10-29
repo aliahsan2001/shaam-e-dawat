@@ -1,5 +1,13 @@
 # Shaam-e-Dawat Catering: "The evening of the feast"
 
+[**Live demo**](https://shaam-e-dawat.vercel.app) · [Source files](./src/) · [Local setup](#run-it)
+
+## Project at a glance
+
+Guest-count and menu-based estimates, procedural venue layouts, and formatted enquiry generation.
+
+**Scope:** Frontend concept with sample pricing. Estimates and message preparation do not create or manage real bookings.
+
 Concept project 7 of 8 for the Aqoa Systems portfolio. A fictional Karachi caterer for weddings, corporate dinners and private functions.
 
 ## What's in it
@@ -30,7 +38,7 @@ The venues are procedural, with no model files. Tables, chairs, place settings, 
 ## Run it
 From a terminal:
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 The site uses ES modules, so it needs a server. Opening `index.html` by double-clicking won't work. Testing flags: `?lite` forces the lighter version, `?full` forces 3D.
